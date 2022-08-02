@@ -7,6 +7,7 @@ const reducer = combineReducers({})
 const initialState = {}
 
 const middleware = [thunk]
-const store = legacy_createStore(reducer, initialState, composeWithDevTools(applyMiddleware(...middleware)))
+const store = legacy_createStore
+(reducer, initialState, composeWithDevTools(applyMiddleware(...middleware)))
 
 export default store
